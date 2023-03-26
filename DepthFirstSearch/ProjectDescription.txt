@@ -1,0 +1,15 @@
+This is a Java program that solves the "harmonious 2-coloring problem" on an undirected,
+unweighted, simple, loopless graph. A harmonious 2-coloring is an assignment of each 
+vertex to one of two colors such that the end points of each conflict edge have different 
+colors, and the end points of each harmony edge have the same color.
+
+The program reads in the input graph from standard input, constructs the graph using an 
+adjacency list representation, and then uses a recursive depth-first search (DFS) algorithm 
+to determine if the graph can be harmoniously 2-colored. The program outputs "1" if the 
+graph can be harmoniously 2-colored, and "0" otherwise.
+
+The program uses a list of integers to represent the adjacency list of the graph, 
+and an integer array to keep track of the color of each vertex. The DFS algorithm is implemented 
+using a recursive function that colors the vertices of the graph and checks for conflicts. 
+The program uses a bitwise AND to keep track of coloring consistency, and returns false immediately 
+when a conflict is detected.
